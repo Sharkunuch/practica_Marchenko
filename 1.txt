@@ -1,0 +1,13 @@
+import datetime
+def printTimeStamp(name):
+    print('Автор програми: ' + name)
+    print('Час компіляції: ' + str(datetime.datetime.now()))
+
+
+
+small = int(input("Кількість бутилок менше 1 л: "))
+big = int(input("Кількість бутилок більше або рівне 1 л: "))
+money = small * 0.10 + big * 0.25
+print("%.2f $" % money)
+
+printTimeStamp("Sharkun")

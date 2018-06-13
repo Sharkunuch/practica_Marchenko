@@ -1,0 +1,18 @@
+import datetime
+def printTimeStamp(name):
+    print('Àâòîğ ïğîãğàìè: ' + name)
+    print('×àñ êîìï³ëÿö³¿: ' + str(datetime.datetime.now()))
+
+sant = int(input("Òâ³é ğ³ñò: "))
+du = sant / 2.54
+fut = sant / 30.48
+if du <= 12:
+    print("Òâ³é ğ³ñò %.2f äşéì³â" % du)
+else:
+    fut = int(sant//30.48)
+    du = int(sant%2.54)
+    print("Òâ³é ğ³ñò: " + str(fut) + " ôóò(³â)")
+    print("i %.2f äşéì(³â)" % du)
+
+
+printTimeStamp("Sharkun")

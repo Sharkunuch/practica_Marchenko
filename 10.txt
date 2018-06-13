@@ -1,0 +1,12 @@
+import datetime
+def printTimeStamp(name):
+    print('Автор програми: ' + name)
+    print('Час компіляції: ' + str(datetime.datetime.now()))
+
+chtoto1 = int(input("Скільки штук ти купив "))
+chtoto2 = int(input("Скільки штуковин ти купив "))
+
+print("Загалом ти будеш нести " + str(chtoto1 * 75 + chtoto2 * 112) + " грам")
+
+
+printTimeStamp("Sharkun")

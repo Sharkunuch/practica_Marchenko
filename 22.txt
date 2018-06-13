@@ -1,0 +1,13 @@
+import datetime
+import  math
+def printTimeStamp(name):
+    print('Автор програми: ' + name)
+    print('Час компіляції: ' + str(datetime.datetime.now()))
+r = int(input('Введіть радіус - '))
+
+s = math.pi * r ** 2  # Площа круга
+
+v = 3 / 4 * math.pi * r ** 3  # Обє'м кулі
+
+print("Площа круга = {}, Об'єм шара = {}".format(s, v))
+printTimeStamp("Sharkun")

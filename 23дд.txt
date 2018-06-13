@@ -1,0 +1,21 @@
+import datetime
+import math
+def printTimeStamp(name):
+ print('Автор програми: ' + name)
+ print('Час компіляції: ' + str(datetime.datetime.now()))
+
+z = int(input("Введіть першу змінну: "))
+y = int(input("Введіть другу змінну: "))
+
+s = z + y
+r = y - z
+d = z * y
+ch = z / y
+o = z % y
+l = math.log10(z)
+zn = z ** y
+
+print("Сума " + str(s) + "\nРізниця " + str(r) + "\nДобуток " + str(d) + "\nЧастка " + str(ch) + "\nОстача від ділення " + str(o) + "\nЛогарифм " + str(l) + "\nПерша змінна в степені другої " + str(zn))
+
+
+printTimeStamp("Sharkun")

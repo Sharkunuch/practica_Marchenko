@@ -1,0 +1,15 @@
+import datetime
+def printTimeStamp(name):
+    print('Автор програми: ' + name)
+    print('Час компіляції: ' + str(datetime.datetime.now()))
+
+latters = ['a', 'e', 'i', 'o', 'u']
+user = input("Введіть букву ")
+if user in latters:
+    print("Це голосна буква")
+elif user == 'y':
+    print("Може бути голосною або приголосною")
+else:
+    print("Це приголосна буква")
+
+printTimeStamp("Sharkun")

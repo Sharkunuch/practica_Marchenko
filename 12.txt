@@ -1,0 +1,15 @@
+import datetime
+def printTimeStamp(name):
+    print('Автор програми: ' + name)
+    print('Час компіляції: ' + str(datetime.datetime.now()))
+
+dni = int(input("Скільки днів "))
+god = int(input("Скільки годин "))
+hv = int(input("Скільки хвилин "))
+sec = int(input("Скільки секунд "))
+
+all_time = dni * 24 * 60 * 60 + god * 60 * 60 + hv * 60 + sec
+print("Ти подорожував " + str(all_time) + " секунд")
+
+
+printTimeStamp("Sharkun")

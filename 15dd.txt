@@ -1,0 +1,26 @@
+import datetime
+def printTimeStamp(name):
+    print('Автор програми: ' + name)
+    print('Час компіляції: ' + str(datetime.datetime.now()))
+
+
+summ = 0
+summ_num = 0
+while True:
+    num = int(input())
+    if num == 0:
+        if summ == 0:
+            print("Нуль не може бути першим символом")
+            break
+        print("Кінець програми")
+        break
+    summ += 1
+    summ_num += num
+
+
+if summ > 0:
+    print("Середнє значення = " + str(summ_num / summ))
+
+
+
+printTimeStamp("Sharkun")

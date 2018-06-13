@@ -1,0 +1,11 @@
+import datetime
+def printTimeStamp(name):
+    print('Автор програми: ' + name)
+    print('Час компіляції: ' + str(datetime.datetime.now()))
+a = int(input())
+b = int(input())
+c = int(input())
+k = [a, b, c]
+print("Мінімальне число:", min(k), "Максимальне число:", max(k))
+
+printTimeStamp("Sharkun")

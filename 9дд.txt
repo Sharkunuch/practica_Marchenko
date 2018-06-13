@@ -1,0 +1,16 @@
+import datetime
+def printTimeStamp(name):
+ print('Автор програми: ' + name)
+ print('Час компіляції: ' + str(datetime.datetime.now()))
+
+lr = float(input("Вік собаки: "))
+ls = 0
+
+if lr <= 2 :
+    ls = lr * 5.25
+else :
+    ls = 10.5
+    ls += 4 * (lr - 2)
+print("Вік людини: " + str(ls))
+
+printTimeStamp("Sharkun")

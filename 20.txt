@@ -1,0 +1,14 @@
+import datetime
+def printTimeStamp(name):
+    print('Автор програми: ' + name)
+    print('Час компіляції: ' + str(datetime.datetime.now()))
+
+bread = int(input("Скільки вчорашнього хліба ти хочеш? "))
+new_bread = bread * 8.5
+print("Якщо б ти купив свіжий хліб ти б заплатив %.2f $" % new_bread)
+scidca = new_bread * 0.60
+print("Твоя знижка = %.2f $" % scidca)
+real_bread = new_bread - scidca
+print("Заплати  %.2f $" % real_bread)
+
+printTimeStamp("Sharkun")

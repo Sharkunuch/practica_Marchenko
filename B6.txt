@@ -1,0 +1,23 @@
+import datetime
+def printTimeStamp(name):
+    print('Автор програми: ' + name)
+    print('Час компіляції: ' + str(datetime.datetime.now()))
+
+dolar = int(input("Ваша решта: "))
+nominals = [2,1,5,10,50]
+
+nominals.sort()
+nominals.reverse()
+summ = 0
+print (dolar, '$ =>')
+
+for k in nominals:
+    d = dolar//k
+    dolar = dolar -d*k
+    print (k,'$ :',int(d))
+    summ += d
+
+print ('В сумі:', summ)
+
+
+printTimeStamp("Sharkun")

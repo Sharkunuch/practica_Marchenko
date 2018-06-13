@@ -1,0 +1,8 @@
+import datetime
+import time
+def printTimeStamp(name):
+    print('Автор програми: ' + name)
+    print('Час компіляції: ' + str(datetime.datetime.now()))
+b = time.asctime()
+print(b)
+printTimeStamp("Sharkun")
